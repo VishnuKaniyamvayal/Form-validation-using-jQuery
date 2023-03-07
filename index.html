@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<link rel="stylesheet" href="styles/bootstrap.min.css" >
+<body>
+	<!-- Header Section-->
+	<div class="top_section">
+		
+	</div>
+
+	<!-- FORM Section-->
+
+	<form id="student_registration_form">
+		<div class="row ">
+			<div class="form-group col-md-4" >
+    			<label for="first_name">First Name:<sup class="required">*</sup></label>
+    			<input type="text" class="form-control" id="first_name" placeholder="Your First Name" name="first_name">
+  			</div>
+  			<div class="form-group col-md-4" >
+    			<label for="last_name">Last Name:<sup class="optional">  (optional)</sup></label>
+    			<input type="text" class="form-control" id="last_name" placeholder="Your Last Name" name="last_name">
+  			</div>
+  			<div class="form-group col-md-4" >
+    			<label for="age">Age:<sup class="required">*</sup></label>
+    			<input type="text" class="form-control" id="age" placeholder="Your Age" name="age">
+  			</div>		
+		</div>
+		<div class="row  mt-2">
+			<div class="form-group col-md-4" >
+    			<label for="register_number">Register Number:<sup class="required">*</sup></label>
+    			<input type="text" class="form-control" id="register_number" placeholder="12-digit Reg.No" name="register_number">
+  			</div>
+  			<div class="form-group col-md-4" >
+    			<label for="email">Your Email ID:<sup class="required">*</sup></label>
+    			<input type="text" class="form-control" id="email" placeholder="Your Email" name="email">
+  			</div>
+  			<div class="form-group col-md-4" >
+    			<label for="phone_number">Your Phone No:<sup class="required">*</sup></label>
+    			<input type="text" class="form-control" id="phone_number" placeholder="94XX87689" name="phone_number">
+  			</div>		
+		</div>
+		<div class="row  mt-2 ">
+			<div class="select_dropdown col-md-4 col">
+			<label for="program" id="select_label">Program:<sup class="required">*</sup></label>
+			<select class="form-select" name="program" id="program">
+  				<option selected value="">Select Your Program</option>
+  				<option value="B.E">B.E</option>
+  				<option value="B.Tech">B.Tech</option>
+  				<option value="B.Sc">B.Sc</option>
+			</select>
+			</div>
+  			<div class="form-group col-md-4" >
+    			<label for="address">Address<sup class="required">*</sup></label>
+    			<textarea type="text" class="form-control" id="address" name="address" rows="3">Your Address Here
+    			</textarea>
+  			</div>
+  			<div class="form-group col-md-4" >
+    			<label for="pincode">Pincode:<sup class="required">*</sup></label>
+    			<input type="text" class="form-control" id="pincode" placeholder="6-Digit Pincode" name="pincode">
+  			</div>		
+		</div>
+		<div class="row  mt-2 ">
+  			<div class="form-group col-md-4" >
+    			<label for="family_income">Family Income<sup class="optional">  (optional)</sup></label>
+    			<input type="text" class="form-control" id="family_income" placeholder="Annual Income" name="family_income">
+  			</div>
+  			<div class="form-check "  id="gender">
+  				<label>Gender:<sup class="required">*</sup></label><br>
+  				<input class="form-check-input" type="radio" name="radio" id="radio_male" value="male">
+  				<label class="form-check-label" for="Radio_male">Male</label><br>
+  				<input class="form-check-input" type="radio" name="radio" id="radio_female" value="female">
+  				<label class="form-check-label" for="radio_female">Female</label><br>
+  				<input class="form-check-input" type="radio" name="radio" id="radio_other" value="other">
+  				<label class="form-check-label" for="radio_other">Other</label><br>
+			</div>
+  		 	<div class="form-group col-md-4" id="dob">
+    			<label for="date_of_birth">Date Of Birth<sup class="optional">  (optional)</sup></label>
+    			<input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+  			</div>
+  		</div>
+  		<div class="row mt-2">
+			<div class="form-group col-md-4" >
+   				<label for="internship">Intrested for an internship?<sup class="optional">  (optional)</sup></label>
+   					<select class="form-select" name="internship" id="internship">
+  						<option value="Yes">Yes</option>
+  						<option value="No">No</option>
+					</select>
+  			</div>
+ 			<div class="form-group col-md-4" >
+   				<label for="image">Image<sup class="optional">  (optional)</sup></label>
+    			<input type="file" class="form-control-file" id="image" name="image">
+
+  			</div>
+  			<div class="form-group col-md-4" >
+    			<label for="height">Height<sup class="optional">  (optional)</sup></label>
+    			<div class="dual_input">
+    					<input type="text" class="form-control" id="height" placeholder="Your Height" name="height">
+    					<select class="form-select" name="height_unit" id="height_unit">
+  								<option value="Inches">In</option>
+  								<option value="Centimeter">Cm</option>
+						</select>
+				</div>
+  			</div>		
+		</div>
+		<div class="row mt-2">
+  			<div class="form-group col-md-4" >
+    			<label for="weight">Weight<sup class="optional">  (optional)</sup></label>
+    			<div class="dual_input">
+    					<input type="text" class="form-control" id="weight" placeholder="Your Weight" name="weight">
+    					<select class="form-select" name="weight_unit" id="weight_unit">
+  								<option value="Kilogram">Kg</option>
+  								<option value="Pounds">Lbs</option>
+						</select>
+				</div>
+  			</div>
+  			<div class="form-group col-md-4" >
+    			<label for="linkedin_username">Linkedin Username:<sup class="optional">  (optional)</sup></label>
+    			<input type="text" class="form-control" id="linkedin_username" placeholder="Yor Username" name="linkedin_username">
+  			</div>
+  			<div class="form-group col-md-4" >
+    			<label for="instagram_username">Instagram Username:<sup class="optional">  (optional)</sup></label>
+    			<input type="text" class="form-control" id="instagram_username" placeholder="Annual Income" name="instagram_username">
+  					</div>		
+		</div> 
+		<div class="row mt-2">
+  			<div class="form-group col-md-6" >
+   				<label for="first_graduate">Are you first graduate from your family?<sup class="optional">  (optional)</sup></label>
+   					<select class="form-select" name="first_graduate" id="first_graduate">
+  						<option value="Yes">Yes</option>
+  						<option value="No">No</option>
+					</select>
+  			</div>
+  			<div class="form-group col-md-6" >
+   				<label for="gov_scholarship">Are you Eligible for Government Scholarships?<sup class="optional">  (optional)</sup></label>
+   					<select class="form-select" name="gov_scholarship" id="gov_scholarship">
+  						<option value="Yes">Yes</option>
+  						<option value="No">No</option>
+					</select>
+  			</div>	
+		</div>
+		<div class="form-check" id="terms">
+  				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  				<label class="form-check-label" for="flexCheckDefault">Agree to <a href="">terms and conditions</a></label>
+		</div> 
+  <button type="submit" class="btn btn-primary ">Submit</button>
+</form>
+</body>
+<script type="text/javascript" src="scripts/jQuery.js"></script>
+<script type="text/javascript" src="scripts/jQuery_validate.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</html>
