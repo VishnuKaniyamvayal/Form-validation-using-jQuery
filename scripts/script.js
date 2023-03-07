@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	// adding a custom method for validating only letters in name section 
 	jQuery.validator.addMethod("lettersonly", function(value, element) 
 	{
 return this.optional(element) || /^[a-z," ",A-Z]+$/i.test(value);
