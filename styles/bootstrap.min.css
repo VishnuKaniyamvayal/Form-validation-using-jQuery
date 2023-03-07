@@ -9513,7 +9513,7 @@ label.form-check-label, .form-check-input {
     padding-left: 24px;
 }
 #gender{
-    margin-right: 220px;
+    margin-right: 0px;
 }
 select#internship {
     margin-left: 0px;
@@ -9550,5 +9550,8 @@ label.error {
     font-size: 13px;
     padding-left: 10px;
     padding-right: 10px;
-    z-index: 10;
+    z-index: 9999;
+}
+label#agree_terms-error{
+    visibility: hidden;
 }

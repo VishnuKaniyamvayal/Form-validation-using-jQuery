@@ -55,7 +55,7 @@
 			</div>
   			<div class="form-group col-md-4" >
     			<label for="address">Address<sup class="required">*</sup></label>
-    			<textarea type="text" class="form-control" id="address" name="address" rows="3">Your Address Here
+    			<textarea type="text" class="form-control" id="address" name="address" >
     			</textarea>
   			</div>
   			<div class="form-group col-md-4" >
@@ -66,9 +66,9 @@
 		<div class="row  mt-2 ">
   			<div class="form-group col-md-4" >
     			<label for="family_income">Family Income<sup class="optional">  (optional)</sup></label>
-    			<input type="text" class="form-control" id="family_income" placeholder="Annual Income" name="family_income">
+    			<input type="text" class="form-control" id="family_income" placeholder="Annual Income in INR" name="family_income">
   			</div>
-  			<div class="form-check "  id="gender">
+  			<div class="form-check col-md-4"  id="gender">
   				<label>Gender:<sup class="required">*</sup></label><br>
   				<input class="form-check-input" type="radio" name="radio" id="radio_male" value="male">
   				<label class="form-check-label" for="Radio_male">Male</label><br>
@@ -92,7 +92,7 @@
   			</div>
  			<div class="form-group col-md-4" >
    				<label for="image">Image<sup class="optional">  (optional)</sup></label>
-    			<input type="file" class="form-control-file" id="image" name="image">
+    			<input type="file" class="form-control-file" id="image" name="image" accept="image/*">
 
   			</div>
   			<div class="form-group col-md-4" >
@@ -100,7 +100,7 @@
     			<div class="dual_input">
     					<input type="text" class="form-control" id="height" placeholder="Your Height" name="height">
     					<select class="form-select" name="height_unit" id="height_unit">
-  								<option value="Inches">In</option>
+  								<option value="feet">ft</option>
   								<option value="Centimeter">Cm</option>
 						</select>
 				</div>
@@ -119,11 +119,11 @@
   			</div>
   			<div class="form-group col-md-4" >
     			<label for="linkedin_username">Linkedin Username:<sup class="optional">  (optional)</sup></label>
-    			<input type="text" class="form-control" id="linkedin_username" placeholder="Yor Username" name="linkedin_username">
+    			<input type="text" class="form-control" id="linkedin_username" placeholder="Your Username" name="linkedin_username">
   			</div>
   			<div class="form-group col-md-4" >
     			<label for="instagram_username">Instagram Username:<sup class="optional">  (optional)</sup></label>
-    			<input type="text" class="form-control" id="instagram_username" placeholder="Annual Income" name="instagram_username">
+    			<input type="text" class="form-control" id="instagram_username" placeholder="Your Username" name="instagram_username">
   					</div>		
 		</div> 
 		<div class="row mt-2">
@@ -143,10 +143,10 @@
   			</div>	
 		</div>
 		<div class="form-check" id="terms">
-  				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  				<label class="form-check-label" for="flexCheckDefault">Agree to <a href="">terms and conditions</a></label>
+  				<input class="form-check-input" type="checkbox" value="" id="agree_terms" name="agree_terms">
+  				<label class="form-check-label" for="agree_terms">Agree to <a href="https://www.magloft.com/publications/6474/terms">terms and conditions</a></label><br>
 		</div> 
-  <button type="submit" class="btn btn-primary ">Submit</button>
+  <button type="submit" class="btn btn-secondary" id="submit_button">Submit</button>
 </form>
 </body>
 <script type="text/javascript" src="scripts/jQuery.js"></script>
